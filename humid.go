@@ -38,6 +38,11 @@ func GenerateWithOptions(opt *Options) string {
 	len := opt.AdjectiveCount + 1
 	str := make([]string, len)
 
+	// Set the default wordlist if none is given
+	if opt.List == nil {
+		opt.List = wordlist.Animals
+	}
+
 	// Make sure adjectiveCount is at least 1 (lowest supported value)
 	if opt.AdjectiveCount <= 0 {
 		opt.AdjectiveCount = 1

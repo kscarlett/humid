@@ -9,12 +9,23 @@ Easily generate memorable and human friendly IDs, as seen on Gyfcat and Netlify.
 Support for custom wordlists:
 
 - Animals (default)
+- AnimalsComplex
 
 ## Usage
 
 First, get the package with `go get github.com/kscarlett/humid`.
 
 After that, import it as usual and call either `humid.Generate()` for the default or preferably, use `humid.GenerateWithOptions()`, feeding in a `humid.Options` struct.
+
+```go
+fmt.Println(humid.GenerateWithOptions(&humid.Options{
+  List:           wordlist.Animals,
+  AdjectiveCount: 2,
+  Separator:      "_",
+  Capitalize:     true,
+}))
+// Example output: Bumpy_Brown_Cat
+```
 
 You can check [the docs](https://godoc.org/github.com/kscarlett/humid) for more information.
 
@@ -44,7 +55,14 @@ I wanted to make this a zero dependency package because that's quite nice and us
 
 ## Acknowledgements
 
+### Inspiration
+
 [human-id](https://github.com/RienNeVaPlus/human-id) - The JavaScript library that inspired this.
+
+### Word lists
+
+- Adjectives from [this list](https://gist.github.com/hugsy/8910dc78d208e40de42deb29e62df913) by [crazy rabbidz](https://github.com/hugsy).
+- Animal names from [this list](https://github.com/skjorrface/animals.txt) by [Alberto Scorrano](https://github.com/skjorrface).
 
 ## License
 

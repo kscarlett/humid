@@ -37,3 +37,35 @@ func TestAnimalsLowercase(t *testing.T) {
 		t.Errorf("wordlist contains non-lowercase letters: %v", problems)
 	}
 }
+
+func TestAnimalsComplexDuplicate(t *testing.T) {
+	err, problems := duplicate(wordlist.AnimalsComplex)
+
+	if err != nil {
+		t.Errorf("wordlist contains duplicates: %v", problems)
+	}
+}
+
+func TestAnimalsComplexEmpty(t *testing.T) {
+	err := empty(wordlist.AnimalsComplex)
+
+	if err != nil {
+		t.Error("wordlist is empty")
+	}
+}
+
+func TestAnimalsComplexIllegalCharacters(t *testing.T) {
+	err, problems := illegalCharacters(wordlist.AnimalsComplex)
+
+	if err != nil {
+		t.Errorf("wordlist contains illegal characters: %v", problems)
+	}
+}
+
+func TestAnimalsComplexLowercase(t *testing.T) {
+	err, problems := lowercase(wordlist.AnimalsComplex)
+
+	if err != nil {
+		t.Errorf("wordlist contains non-lowercase letters: %v", problems)
+	}
+}
