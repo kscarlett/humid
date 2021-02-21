@@ -44,7 +44,13 @@ I wanted to make this a zero dependency package because that's quite nice and us
 
 ## Acknowledgements
 
+### Inspiration
+
 [human-id](https://github.com/RienNeVaPlus/human-id) - The JavaScript library that inspired this.
+
+### Word lists
+
+- Adjectives from [this list](https://gist.github.com/hugsy/8910dc78d208e40de42deb29e62df913) by [crazy rabbidz](https://github.com/hugsy).
 
 ## License
 
