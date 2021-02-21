@@ -2,7 +2,7 @@
 
 Easily generate memorable and human friendly IDs, as seen on Gyfcat and Netlify.
 
-[![GitHub Actions status](https://github.com/kscarlett/humid/workflows/Go/badge.svg?branch=master)](https://github.com/kscarlett/humid/actions?query=workflow%3AGo)
+[![GitHub Actions status](https://github.com/kscarlett/humid/workflows/go.yml/badge.svg?branch=master)](https://github.com/kscarlett/humid/actions/go.yml)
 [![Go Report Card](https://goreportcard.com/badge/github.com/kscarlett/humid)](https://goreportcard.com/report/github.com/kscarlett/humid)
 [![Documentation](https://godoc.org/github.com/kscarlett/humid?status.svg)](https://godoc.org/github.com/kscarlett/humid)
 
