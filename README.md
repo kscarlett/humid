@@ -16,6 +16,16 @@ First, get the package with `go get github.com/kscarlett/humid`.
 
 After that, import it as usual and call either `humid.Generate()` for the default or preferably, use `humid.GenerateWithOptions()`, feeding in a `humid.Options` struct.
 
+```go
+fmt.Println(humid.GenerateWithOptions(&humid.Options{
+  List:           wordlist.Animals,
+  AdjectiveCount: 2,
+  Separator:      "_",
+  Capitalize:     true,
+}))
+// Example output: Bumpy_Brown_Cat
+```
+
 You can check [the docs](https://godoc.org/github.com/kscarlett/humid) for more information.
 
 ## Adding word lists
