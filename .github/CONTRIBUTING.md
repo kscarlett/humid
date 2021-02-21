@@ -4,7 +4,7 @@
 
 Before you begin:
 
-- Have you read the [code of conduct](.github/CODE_OF_CONDUCT.md)?
+- Have you read the [code of conduct](CODE_OF_CONDUCT.md)?
 - Check out the [existing issues](https://github.com/kscarlett/humid/issues) to see if an issue exists already for the change you want to make.
 
 ### Don't see your issue? Open one
