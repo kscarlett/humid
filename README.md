@@ -14,7 +14,7 @@ Support for custom wordlists:
 
 First, get the package with `go get github.com/kscarlett/humid`.
 
-After that, import it as usual and call either `humid.Generate()` for the default or preferably, use `humid.GenerateWithOptions`, feeding in a `humid.Options` struct.
+After that, import it as usual and call either `humid.Generate()` for the default or preferably, use `humid.GenerateWithOptions()`, feeding in a `humid.Options` struct.
 
 You can check [the docs](https://godoc.org/github.com/kscarlett/humid) for more information.
 
