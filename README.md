@@ -29,6 +29,8 @@ fmt.Println(humid.GenerateWithOptions(&humid.Options{
 
 You can check [the docs](https://godoc.org/github.com/kscarlett/humid) for more information.
 
+If you're interested in using humid in your infrastructure, why not check out [the Terraform provider](https://github.com/kscarlett/terraform-provider-humid) that uses humid?
+
 ## Adding word lists
 
 To add a new wordlist, you first create a new file in `wordlist/` using the name of the list.
