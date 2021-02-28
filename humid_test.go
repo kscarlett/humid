@@ -18,7 +18,7 @@ func ExampleGenerate() {
 
 func ExampleGenerateWithOptions() {
 	fmt.Println(humid.GenerateWithOptions(&humid.Options{
-		List:           wordlist.Adjectives,
+		List:           wordlist.Animals,
 		AdjectiveCount: 2,
 		Separator:      "_",
 		Capitalize:     true,
@@ -27,11 +27,16 @@ func ExampleGenerateWithOptions() {
 }
 
 // Tests
-func TestGenerateDefault(t *testing.T) {
+func TestGenerateWithOptions(t *testing.T) {
 	const expectedSeparator = "-"
 	const expectedWordCount = 2
 
-	result := humid.Generate()
+	result := humid.GenerateWithOptions(&humid.Options{
+		List:           wordlist.Adjectives,
+		AdjectiveCount: 1,
+		Separator:      "-",
+		Capitalize:     false,
+	})
 	t.Logf("returned id: %s\n", result)
 
 	// Test separator
