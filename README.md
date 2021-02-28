@@ -4,6 +4,7 @@ Easily generate memorable and human friendly IDs, as seen on Gyfcat and Netlify.
 
 [![go](https://github.com/kscarlett/humid/actions/workflows/go.yml/badge.svg?branch=main)](https://github.com/kscarlett/humid/actions/workflows/go.yml)
 [![Go Report Card](https://goreportcard.com/badge/github.com/kscarlett/humid)](https://goreportcard.com/report/github.com/kscarlett/humid)
+[![Coverage Status](https://coveralls.io/repos/github/kscarlett/humid/badge.svg?branch=main)](https://coveralls.io/github/kscarlett/humid?branch=main)
 [![Documentation](https://godoc.org/github.com/kscarlett/humid?status.svg)](https://godoc.org/github.com/kscarlett/humid)
 
 Support for custom wordlists:
