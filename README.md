@@ -6,6 +6,7 @@ Easily generate memorable and human friendly IDs, as seen on Gyfcat and Netlify.
 [![Go Report Card](https://goreportcard.com/badge/github.com/kscarlett/humid)](https://goreportcard.com/report/github.com/kscarlett/humid)
 [![Coverage Status](https://coveralls.io/repos/github/kscarlett/humid/badge.svg?branch=main)](https://coveralls.io/github/kscarlett/humid?branch=main)
 [![Documentation](https://godoc.org/github.com/kscarlett/humid?status.svg)](https://godoc.org/github.com/kscarlett/humid)
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fkscarlett%2Fhumid.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2Fkscarlett%2Fhumid?ref=badge_shield)
 
 Support for custom wordlists:
 
@@ -70,3 +71,6 @@ I wanted to make this a zero dependency package because that's quite nice and us
 ## License
 
 This package was created by [Kellen Scarlett](https://github.com/kscarlett) and released under the [MIT License](LICENSE).
+
+
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fkscarlett%2Fhumid.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2Fkscarlett%2Fhumid?ref=badge_large)
