@@ -26,17 +26,7 @@ jobs:
       - name: Test
         run: go test -coverprofile=profile.cov ./...
       - name: Send coverage
+        if: matrix.go == "1.16"
         uses: shogo82148/actions-goveralls@v1
         with:
           path-to-profile: profile.cov
-          flag-name: Go-${{ matrix.go }}
-          parallel: true
-
-  # notifies that all test jobs are finished.
-  finish:
-    needs: test
-    runs-on: ubuntu-latest
-    steps:
-      - uses: shogo82148/actions-goveralls@v1
-        with:
-          parallel-finished: true
