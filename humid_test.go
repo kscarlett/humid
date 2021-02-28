@@ -18,7 +18,7 @@ func ExampleGenerate() {
 
 func ExampleGenerateWithOptions() {
 	fmt.Println(humid.GenerateWithOptions(&humid.Options{
-		List:           wordlist.Animals,
+		List:           wordlist.Adjectives,
 		AdjectiveCount: 2,
 		Separator:      "_",
 		Capitalize:     true,
@@ -36,28 +36,29 @@ func TestGenerateDefault(t *testing.T) {
 
 	// Test separator
 	// Test word count
-	split := strings.Split(result, expectedSeparator)
+	words := strings.Split(result, expectedSeparator)
 
-	if len(split) != expectedWordCount {
+	if len(words) != expectedWordCount {
 		t.Fatalf("expected %d words separated by \"%s\", got %d words instead", expectedWordCount, expectedSeparator, expectedWordCount)
 	}
 
 	// Test capitalization
-	adjective := split[0]
-	noun := split[1]
-
-	if !isLower(adjective) {
-		t.Errorf("expected word \"%s\" to be lowercase", adjective)
+	if !isLower(words[0]) {
+		t.Errorf("expected word \"%s\" to be lowercase", words[0])
 	}
 
-	if !isLower(noun) {
-		t.Errorf("expected word \"%s\" to be lowercase", noun)
+	if !isLower(words[1]) {
+		t.Errorf("expected word \"%s\" to be lowercase", words[1])
 	}
 
 	// Test wordlist
 	adjectives := wordlist.Adjectives
-	if !find(adjectives, adjective) {
-		t.Errorf("expected to find adjective \"%s\" in wordlist it was not there", adjective)
+	if !find(adjectives, words[0]) {
+		t.Errorf("expected to find \"%s\" in wordlist it was not there", words[0])
+	}
+
+	if !find(adjectives, words[1]) {
+		t.Errorf("expected to find \"%s\" in wordlist it was not there", words[1])
 	}
 }
 
