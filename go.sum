@@ -2,5 +2,5 @@ github.com/aead/chacha20 v0.0.0-20180709150244-8b13a72661da h1:KjTM2ks9d14ZYCvmH
 github.com/aead/chacha20 v0.0.0-20180709150244-8b13a72661da/go.mod h1:eHEWzANqSiWQsof+nXEI9bUVUyV6F53Fp89EuCh2EAA=
 golang.org/x/sys v0.0.0-20190626221950-04f50cda93cb h1:fgwFCsaw9buMuxNd6+DQfAuSFqbNiQZpcgJQAgJsK6k=
 golang.org/x/sys v0.0.0-20190626221950-04f50cda93cb/go.mod h1:h1NjWce9XRLGQEsW7wpKNCjG9DtNlClVuFLEZdDNbEs=
-lukechampine.com/frand v1.3.0 h1:HFLrwEHr78+EqAfyp8OChgEzdYCVZzzj6Y+cGDQRhaI=
-lukechampine.com/frand v1.3.0/go.mod h1:4S/TM2ZgrKejMcKMbeLjISpJMO+/eZ1zu3vYX9dtj3s=
+lukechampine.com/frand v1.4.1 h1:L4l4KVKu0kRfAEiz/b9/xQbc4bycSD+UFjzh4E8q7lE=
+lukechampine.com/frand v1.4.1/go.mod h1:4S/TM2ZgrKejMcKMbeLjISpJMO+/eZ1zu3vYX9dtj3s=
