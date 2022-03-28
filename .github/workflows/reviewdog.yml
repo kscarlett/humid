@@ -16,4 +16,4 @@ jobs:
           restore-keys: |
             go-
       - name: golangci-lint
-        uses: reviewdog/action-golangci-lint@v1
+        uses: reviewdog/action-golangci-lint@v2.1.1
