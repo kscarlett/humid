@@ -9,7 +9,7 @@ jobs:
     steps:
       - name: Check out code into the Go module directory
         uses: actions/checkout@v2
-      - uses: actions/cache@v2.1.4
+      - uses: actions/cache@v3.0.5
         with:
           path: ~/go/pkg/mod
           key: go-${{ hashFiles('**/go.sum') }}
